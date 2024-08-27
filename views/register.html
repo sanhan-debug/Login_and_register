@@ -10,18 +10,27 @@
 <body>
   <div class="wrapper">
     <h2>Registration</h2>
-    <form action="#">
+    <form action="/register" enctype="multipart/form-data" method="post">
       <div class="input-box">
         <input type="text" placeholder="Enter your name" required>
       </div>
       <div class="input-box">
-        <input type="text" placeholder="Enter your email" required>
+        <input type="text" placeholder="Enter your surname" required>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Create password" required>
+        <input type="tel" placeholder="Enter your telephone" required>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Confirm password" required >
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Enter your age" required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Create password" required >
+      </div>
+      <div class="input-box">
+        <input type="file" name ="avatar"  required >
       </div>
       <div class="policy">
         <input type="checkbox">
@@ -37,4 +46,4 @@
   </div>
 </body>
 </html>
-<div class="open_grepper_editor" title="Edit & Save To Grepper"></div>
+<!-- <div class="open_grepper_editor" title="Edit & Save To Grepper"></div> -->
