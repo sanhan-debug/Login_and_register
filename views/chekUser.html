@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search </title>
+  <!---Custom CSS File--->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <form action="/search"  id="userForm">
+            <input type="text" placeholder="search" name="username" id="username">
+            <button type="submit">submit</button>
+        </form>
+
+        <div id="result"></div>
+
+
+        <!-- <script>
+            document.getElementById('#userForm').addEventListener("submit",async function(event) {
+                event.preventDefault()
+                
+                const usernameInput = document.getElementById('#username').ariaValueMax
+
+                try{
+                    const response = await fetch("/search",{
+                        method:'POST',
+                        headers:{
+                            "Content-type" : "application/json"
+                        },
+                        body:JSON.stringfy({username:usernameInput})
+                        
+                    })
+                    const result = await response.json();
+                    if(response.ok){
+                        document.getElementById('#result').innerText = `
+                        ${result.username}`
+                    }else{
+                        document.getElementById('#result').innerText = `${result.message}`
+                    }
+                }catch(err){
+                    console.error(err)
+                }
+            })
+        </script> -->
+</body>
+</html>
